@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h2 class="navH2"> Jerry's Hawaiian Ice</h2>
+            <button id="closeButton" class="hidden">Close</button>
+            <div id="options" class="hidden">
+                <button id="option1">Regular Flavors</button>
+                <button id="option2">Special Flavors</button>
+            </div>
+            <button id="mainButton">Show Raspa Flavors</button>
+        </nav>
+        <div id="contentDiv" class="contentDiv"> 
+            <div id="content">
+            <!-- Content will be displayed here -->
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="snacks">
+
+            <div class="snack-item" data-name="Chips" data-price="$2.99" data-image="images/Chocolate_Oreo_Shake.jpg">
+                <img src="images/Chocolate_Oreo_Shake.jpg" alt="Chips">
+                <h2>Chips</h2>
+                <p>1</p>
+            </div>
+            <div class="snack-item" data-name="Cookies" data-price="$3.49" data-image="images/Conchas.jpg">
+                <img src="images/Conchas.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>2</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>3</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>4</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>5</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>6</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>7</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>8</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>9</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>10</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>11</p>
+            </div>
+
+            <div class="snack-item" data-name="Cookie_Monster_Shake" data-price="$3.49" data-image="images/Cookie Monster Shake.jpg">
+                <img src="images/Cookie Monster Shake.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>12</p>
+            </div>
+            <!-- Add more items as needed -->
+        </section>
+    </main>
+    
+            <!-- Modal -->
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Snack Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+
+
+        <!-- Modal for Regular Flavors -->
+        <div id="modal1" class="navModal">
+            <div class="navModal-content">
+                <span class="close" id="closeModal1">&times;</span>
+                <div id="modal1-content"></div>
+            </div>
+        </div>
+    
+        <!-- Modal for Special Flavors -->
+        <div id="modal2" class="navModal">
+            <div class="navModal-content">
+                <span class="close" id="closeModal2">&times;</span>
+                <div id="modal2-content"></div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
