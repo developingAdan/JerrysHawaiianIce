@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    outline: none !important;
+    /* outline: none !important; */
 }
 
 body {
@@ -12,17 +12,22 @@ body {
 
 .navH2 {
     outline: 2px solid red;
-    margin-left: 16px;
+    /* margin-left: 16px; */
+    width: 25%
+}
+
+.navH2 img {
+    width: 100%;
 }
 
 header {
     outline: 2px solid red;
     background-color: #f8f8f8;
-    width: 100%;
+    /* width: 100%; */
     /* padding: 12px; */
-    position: relative;
-    padding-left: 12px;
-    padding-right: 12px;
+    /* position: relative; */
+    /* padding-left: 12px; */
+    /* padding-right: 12px; */
 }
 
 nav {
@@ -44,11 +49,13 @@ nav {
 
 .showRaspaFlavorsBtn {
     outline: 2px solid blue;
-    
+    /* height: 100%; */
+    margin: auto 0;
+    padding: 16px;
 }
 
 button {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     background-color: #555;
     border: none;
     color: white;
@@ -67,6 +74,7 @@ button:hover {
     /* margin-top: 10px; */
     text-align: center;
     margin: auto 0;
+    
 }
 
 .hidden {
