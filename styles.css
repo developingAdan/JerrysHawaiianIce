@@ -42,6 +42,11 @@ nav {
     margin-top: 12px;
 }
 
+.showRaspaFlavorsBtn {
+    outline: 2px solid blue;
+    
+}
+
 button {
     outline: 2px solid red;
     background-color: #555;
@@ -67,6 +72,7 @@ button:hover {
 .hidden {
     display: none;
 }
+
 
 #closeButton {
     position: absolute;
@@ -185,4 +191,16 @@ main {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+
+/* When the width is at 443px, this media query will take into effect */
+@media (max-width: 443px) {
+    .showRaspaFlavorsBtn {
+        outline: 3px solid purple; 
+        height: 25%;
+        width: 30%;
+        margin: auto 8px auto 0;
+    }
 }
