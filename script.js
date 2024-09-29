@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle options display
     mainButton.addEventListener('click', () => {
         options.classList.toggle('hidden');
+        
     });
 
     // Show Regular Flavors modal

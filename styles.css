@@ -13,7 +13,8 @@ body {
 .navH2 {
     outline: 2px solid red;
     /* margin-left: 16px; */
-    width: 25%
+    width: 25%;
+    margin: auto 0;
 }
 
 .navH2 img {
@@ -112,7 +113,7 @@ main {
 }
 
 .snack-item img {
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
     border-radius: 5px;
 }
@@ -207,8 +208,15 @@ main {
 @media (max-width: 443px) {
     .showRaspaFlavorsBtn {
         outline: 3px solid purple; 
-        height: 25%;
-        width: 30%;
+        height: 20%;
+        width: 25%;
         margin: auto 8px auto 0;
+        /* font-size: 0.9rem; */
+    }
+
+    .snack-item img {
+        max-width: 75%;
+        height: auto;
+        border-radius: 5px;
     }
 }
