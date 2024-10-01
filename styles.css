@@ -93,12 +93,21 @@ main {
     padding-top: 80px
 }
 
-.snacks {
+/* .snacks {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+} */
+
+
+.snacks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 16px; /* Space between items */
+    margin: 20px; /* Margin around the grid */
 }
+
 
 .snack-item {
     border: 1px solid #ddd;
@@ -106,6 +115,7 @@ main {
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    /* overflow: hidden; */
 }
 
 .snack-item p {
