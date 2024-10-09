@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Set modal content
             modalName.textContent = name;
-            modalPrice.textContent = price;
+            // modalPrice.textContent = price;
             modalImage.src = image;
 
             // Show the modal
