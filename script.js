@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Nav bar modals
 document.addEventListener('DOMContentLoaded', () => {
     const mainButton = document.getElementById('mainButton');
+    const mainButton2 = document.getElementById('mainButton2');
     const options = document.getElementById('options');
     const regularFlavors = document.getElementById('option1');
     const specialFlavors = document.getElementById('option2');
@@ -58,6 +59,36 @@ document.addEventListener('DOMContentLoaded', () => {
         
     });
 
+    // mainButton2.addEventListener('click', () => {
+    //     // options.classList.toggle('hidden');
+        
+    // });
+
+       // Show Regular Flavors modal
+       mainButton2.addEventListener('click', () => {
+        // modal1Content.innerHTML = `<h1>Regular Flavors</h1>`;
+        modal1Content.innerHTML = `
+            <h1>Combos</h1>
+
+            <h3>Combo #1</h3>
+            <p>Combo #1 has this this and this. And this other thing as well. </p>
+            <span> {Price goes here} </span>
+            <h3>Combo #2</h3>
+            <p>Combo #2 has this this and this. And this other thing as well. </p>
+            <span> {Price Combo #2 goes here} </span>
+            <h3>Combo #3</h3>
+            <p>Combo #3 has this this and this. And this other thing as well. </p>
+            <h3>Combo #4</h3>
+            <p>Combo #4 has this this and this. And this other thing as well. </p>
+            <h3>Combo #5</h3>
+            <p>Combo #5 has this this and this. And this other thing as well. </p>`;
+        modal1.style.display = 'block';
+        // modal1.style.textAlign = 'center';
+        options.classList.add('hidden'); // Hide options when modal is shown
+    });
+
+
+
     // Show Regular Flavors modal
     regularFlavors.addEventListener('click', () => {
         // modal1Content.innerHTML = `<h1>Regular Flavors</h1>`;
@@ -68,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>Banana</h3>
             <h3>Cherry</h3>
             <h3>Coconut White</h3>
-            <h3>Jalapeno Stringer</h3>
             <h3>Watermelon</h3>
             <h3>Bubble Gum Pink</h3>
             <h3>Canteloupe</h3>
