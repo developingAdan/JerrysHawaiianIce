@@ -60,32 +60,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // mainButton2.addEventListener('click', () => {
-    //     // options.classList.toggle('hidden');
-        
+    //     options.classList.toggle('hidden');
     // });
 
-       // Show Regular Flavors modal
-       mainButton2.addEventListener('click', () => {
-        // modal1Content.innerHTML = `<h1>Regular Flavors</h1>`;
-        modal1Content.innerHTML = `
-            <h1>Combos</h1>
+       // Show Combos modal
+    //    mainButton2.addEventListener('click', () => {
+    //     // modal1Content.innerHTML = `<h1>Regular Flavors</h1>`;
+    //     modal1Content.innerHTML = `
+    //         <h1>Combos</h1>
 
-            <h3>Combo #1</h3>
-            <p>Combo #1 has this this and this. And this other thing as well. </p>
-            <span> {Price goes here} </span>
-            <h3>Combo #2</h3>
-            <p>Combo #2 has this this and this. And this other thing as well. </p>
-            <span> {Price Combo #2 goes here} </span>
-            <h3>Combo #3</h3>
-            <p>Combo #3 has this this and this. And this other thing as well. </p>
-            <h3>Combo #4</h3>
-            <p>Combo #4 has this this and this. And this other thing as well. </p>
-            <h3>Combo #5</h3>
-            <p>Combo #5 has this this and this. And this other thing as well. </p>`;
-        modal1.style.display = 'block';
-        // modal1.style.textAlign = 'center';
-        options.classList.add('hidden'); // Hide options when modal is shown
-    });
+    //         <h3>Combo #1</h3>
+    //         <p>Combo #1 has this this and this. And this other thing as well. </p>
+    //         <span> {Price goes here} </span>
+    //         <h3>Combo #2</h3>
+    //         <p>Combo #2 has this this and this. And this other thing as well. </p>
+    //         <span> {Price Combo #2 goes here} </span>
+    //         <h3>Combo #3</h3>
+    //         <p>Combo #3 has this this and this. And this other thing as well. </p>
+    //         <h3>Combo #4</h3>
+    //         <p>Combo #4 has this this and this. And this other thing as well. </p>
+    //         `;
+    //     modal1.style.display = 'block';
+    //     // modal1.style.textAlign = 'center';
+    //     options.classList.add('hidden'); // Hide options when modal is shown
+    // });
 
 
 
