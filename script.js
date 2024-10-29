@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h1>Combos</h1>
         <div>
             <h3>Combo #1</h3>
-            <p>XS Elote, Small Raspa, y Small Fruta</p>
+            <p>XS Elote, Small Raspa, Small Fruta</p>
         </div>
         <div>
             <h3>Combo #2</h3>
