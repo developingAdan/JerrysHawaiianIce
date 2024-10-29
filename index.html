@@ -26,9 +26,12 @@
                 <button id="option1">Regular Flavors</button>
                 <button id="option2">Special Flavors</button>
             </div>
+            <div id="comboOptions" class="hidden">
+
+            </div>
             <div class="navButtons">
                 <button id="mainButton" class="showRaspaFlavorsBtn">Show Raspa Flavors</button>    
-                <!-- <button id="mainButton2" class="combosBtn">Combos</button> -->
+                <button id="combosButton" class="combosBtn">Combos</button>
             </div>
         </nav>
         <div id="contentDiv" class="contentDiv"> 
@@ -379,22 +382,29 @@
     </div>
 
 
-        <!-- Modal for Regular Flavors -->
-        <div id="modal1" class="navModal">
-            <div class="navModal-content">
-                <span class="close" id="closeModal1">&times;</span>
-                <div id="modal1-content"></div>
-            </div>
+    <!-- Modal for Regular Flavors -->
+    <div id="modal1" class="navModal">
+        <div class="navModal-content">
+            <span class="close" id="closeModal1">&times;</span>
+            <div id="modal1-content"></div>
         </div>
-    
-        <!-- Modal for Special Flavors -->
-        <div id="modal2" class="navModal">
-            <div class="navModal-content">
-                <span class="close" id="closeModal2">&times;</span>
-                <div id="modal2-content"></div>
-            </div>
-        </div>
+    </div>
 
+    <!-- Modal for Special Flavors -->
+    <div id="modal2" class="navModal">
+        <div class="navModal-content">
+            <span class="close" id="closeModal2">&times;</span>
+            <div id="modal2-content"></div>
+        </div>
+    </div>
+
+        <!-- Modal for Combos -->
+        <div id="modal3" class="navModal">
+        <div class="navModal-content">
+            <span class="close" id="closeModal3">&times;</span>
+            <div id="modal3-content"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

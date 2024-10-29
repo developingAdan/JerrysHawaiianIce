@@ -41,17 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
 // Nav bar modals
 document.addEventListener('DOMContentLoaded', () => {
     const mainButton = document.getElementById('mainButton');
-    const mainButton2 = document.getElementById('mainButton2');
+    const combosButton = document.getElementById('combosButton');
     const options = document.getElementById('options');
+    const comboOptions = document.getElementById('comboOptions')
     const regularFlavors = document.getElementById('option1');
     const specialFlavors = document.getElementById('option2');
 
     const modal1 = document.getElementById('modal1');
     const modal2 = document.getElementById('modal2');
+    const modal3 = document.getElementById('modal3');
     const closeModal1 = document.getElementById('closeModal1');
     const closeModal2 = document.getElementById('closeModal2');
+    const closeModal3 = document.getElementById('closeModal3');
     const modal1Content = document.getElementById('modal1-content');
     const modal2Content = document.getElementById('modal2-content');
+    const modal3Content = document.getElementById('modal3-content');
 
     // Toggle options display
     mainButton.addEventListener('click', () => {
@@ -59,31 +63,36 @@ document.addEventListener('DOMContentLoaded', () => {
         
     });
 
-    // mainButton2.addEventListener('click', () => {
-    //     options.classList.toggle('hidden');
-    // });
+    combosButton.addEventListener('click', () => {
+        comboOptions.classList.toggle('hidden');
+    });
 
-       // Show Combos modal
-    //    mainButton2.addEventListener('click', () => {
-    //     // modal1Content.innerHTML = `<h1>Regular Flavors</h1>`;
-    //     modal1Content.innerHTML = `
-    //         <h1>Combos</h1>
-
-    //         <h3>Combo #1</h3>
-    //         <p>Combo #1 has this this and this. And this other thing as well. </p>
-    //         <span> {Price goes here} </span>
-    //         <h3>Combo #2</h3>
-    //         <p>Combo #2 has this this and this. And this other thing as well. </p>
-    //         <span> {Price Combo #2 goes here} </span>
-    //         <h3>Combo #3</h3>
-    //         <p>Combo #3 has this this and this. And this other thing as well. </p>
-    //         <h3>Combo #4</h3>
-    //         <p>Combo #4 has this this and this. And this other thing as well. </p>
-    //         `;
-    //     modal1.style.display = 'block';
-    //     // modal1.style.textAlign = 'center';
-    //     options.classList.add('hidden'); // Hide options when modal is shown
-    // });
+    // Show Combos modal
+    combosButton.addEventListener('click', () => {
+    // modal1Content.innerHTML = `<h1>Regular Flavors</h1>`;
+    modal3Content.innerHTML = `
+        <h1>Combos</h1>
+        <div>
+            <h3>Combo #1</h3>
+            <p>XS Elote, Small Raspa, y Small Fruta</p>
+        </div>
+        <div>
+            <h3>Combo #2</h3>
+            <p>Small Pepihuates, Small Raspa, Small Nachos</p>
+        </div>
+        <div>
+            <h3>Combo #3</h3>
+            <p>Small Raspa, Small Fresas con Crema, Small Hot Cheetos</p>
+        </div>
+        <div>
+            <h3>Combo #4</h3>
+            <p>Small Raspa, Small Revoltura, XS Pepino con Rajas</p>
+        </div>
+        `;
+    modal3.style.display = 'block';
+    // modal1.style.textAlign = 'center';
+    options.classList.add('hidden'); // Hide options when modal is shown
+    });
 
 
 
@@ -122,14 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
         options.classList.add('hidden'); // Hide options when modal is shown
     });
 
-    // Show Special Flavors modal
-    // specialFlavors.addEventListener('click', () => {
-    //     modal2Content.innerHTML = `<h1>Content for Special Flavors</h1>
-    //         <p>This is the content displayed when Special Flavors is clicked.</p>`;
-    //     modal2.style.display = 'block';
-    //     options.classList.add('hidden'); // Hide options when modal is shown
-    // });
-
     specialFlavors.addEventListener('click', () => {
         modal1Content.innerHTML = `
             <h1>Special Flavors</h1>
@@ -167,6 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close Modal 2
     closeModal2.addEventListener('click', () => {
         modal2.style.display = 'none';
+    });
+
+    closeModal3.addEventListener('click', () => {
+        modal3.style.display = 'none';
     });
 
     // Close modals when clicking outside of the modal content

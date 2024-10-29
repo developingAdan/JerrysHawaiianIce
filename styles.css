@@ -220,6 +220,28 @@ main {
     padding-left: 30px;
 }
 
+#modal3-content h1 {
+    outline: 2px solid blue;
+    text-align: center;
+    border-bottom: 2px solid red;
+    padding-bottom: 12px;
+    padding-left: 30px;
+}
+
+#modal3-content {
+    outline: 2px solid blue;
+    text-align: left;
+    /* border-bottom: 2px solid green; */
+    /* padding-bottom: 12px;
+    padding-left: 30px; */
+} 
+
+#modal3-content div {
+    outline: 2px solid green;
+    border-bottom: 2px solid black;
+    /* text-align: right; */
+} 
+
 .close {
     color: #aaa;
     float: right;
