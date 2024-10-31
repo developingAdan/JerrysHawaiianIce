@@ -212,6 +212,7 @@ main {
     flex-direction: column; */
 }
 
+
 #modal1-content h1 {
     outline: 2px solid blue;
     text-align: center;
@@ -241,6 +242,10 @@ main {
     border-bottom: 1px solid black;
     /* text-align: right; */
 } 
+/* 
+#modal3-content div:last-child {
+    border: none;
+} */
 
 .close {
     color: #aaa;
@@ -260,23 +265,38 @@ main {
 
 /* When the width is at 443px, this media query will take into effect */
 @media (max-width: 443px) {
+
+    .navButtons {
+        outline: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        /* padding-bottom: 12px; */
+        width: 24%;
+    }
+
+    
     .showRaspaFlavorsBtn {
         outline: 3px solid purple; 
         /* height: 10%; */
-        width: 60%;
         margin: 0 auto;
-        margin-right: 16px;
-        /* padding: 8px 0 8px 0;  */
+        /* width: 60%; */
+        /* padding: none; */
+        /* margin-right: 16px; */
+        padding: 16px 0 16px 0; 
         font-size: 0.9rem;
     }
 
     .combosBtn {
         outline: 3px solid purple; 
         /* height: 10%; */
-        width: 60%;
+        /* width: 60%; */
         margin: 12px auto 0 auto;
-        margin-right: 16px;
+        /* margin-right: 16px; */
         font-size: 0.9rem;
+        /* text-align: center; */
+        /* padding-right: 20px; */
+        /* align-items: center; */
+        /* align-content: center; */
     }
 
 
@@ -290,23 +310,4 @@ main {
         outline: 2px solid purple;
         height: 15%;
     }
-
-    nav {
-        outline: 2px solid green;
-        /* height: 20%; */
-        /* padding: 0 12px 0 12px; */
-        /* background-color: (255, 255, 255, 0.5);
-        width: 100%;
-        color: white; */
-        /* text-align: center; */
-        /* display: flex;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        border-radius: 12px;
-        margin-top: 12px; */
-    }
-
 }

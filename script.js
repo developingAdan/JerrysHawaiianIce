@@ -90,11 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         `;
     modal3.style.display = 'block';
-    // modal1.style.textAlign = 'center';
     options.classList.add('hidden'); // Hide options when modal is shown
-    });
+
+     // Remove border from the last combo element
+     const lastCombo = modal3Content.lastElementChild; // Get the last child
+     if (lastCombo) {
+         lastCombo.style.border = 'none'; // Remove the border
+     }
+});
 
 
+   
 
     // Show Regular Flavors modal
     regularFlavors.addEventListener('click', () => {
