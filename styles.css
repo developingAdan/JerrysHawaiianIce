@@ -55,6 +55,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding-bottom: 12px;
+    padding-right: 4px;
 }
 
 .showRaspaFlavorsBtn {
